@@ -54,9 +54,9 @@ android {
     signingConfigs {
         release {
             keyAlias 'myapp'
-            keyPassword System.env.KEY_PWD ?: ''
+            keyPassword System.env.KEY_PWD ?: 'admin12345'
             storeFile file('../keystore.jks')
-            storePassword System.env.KEYSTORE_PWD ?: ''
+            storePassword System.env.KEYSTORE_PWD ?: 'admin12345'
         }
     }
 
